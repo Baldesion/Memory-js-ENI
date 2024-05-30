@@ -1,0 +1,90 @@
+body {
+  font-family: "Nunito", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+  position: relative;
+  z-index: 0;
+  background: url(/assets/images/accueilbg.png);
+}
+
+.presentation {
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  color: white;
+  background-color: rgb(146, 146, 146);
+  padding: 10px;
+  border-radius: 30px;
+}
+
+.description {
+  padding: auto;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.memorypng {
+  height: 27rem;
+}
+
+.supplement {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 20px;
+}
+
+nav {
+  background-color: rgb(146, 146, 146);
+  padding: 10px 0;
+  box-shadow: 0 4px 6px rgba(1, 1, 1, 0.1);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  /* Suppr puces et marges par défaut */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+  font-size: 1.2em;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #d6d6d6;
+}
+/* Modifie la scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #222d55;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #f2ecf8;
+}

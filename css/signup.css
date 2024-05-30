@@ -1,0 +1,182 @@
+body {
+  font-family: "Nunito", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+  position: relative;
+  background: url(/assets/images/signup.png);
+  z-index: 0;
+}
+
+nav {
+  background-color: rgb(146, 146, 146);
+  padding: 10px 0;
+  box-shadow: 0 4px 6px rgba(1, 1, 1, 0.1);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  /* Suppr puces et marges par défaut */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+  font-size: 1.2em;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #d6d6d6;
+}
+/* Modifie la scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #222d55;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #f2ecf8;
+}
+
+fieldset {
+  border-radius: 7px;
+  border: 9px solid rgba(146, 146, 146);
+  margin-top: 10rem;
+  background-color: white;
+}
+
+input {
+  height: 30px;
+  width: 400px;
+  border-radius: 7px;
+  border: 5px solid rgba(146, 146, 146);
+  padding-left: 5px;
+}
+
+label {
+  display: inline-block;
+  width: 200px;
+  color: rgb(54, 54, 54);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+section div {
+  margin: 15px;
+}
+
+.btn {
+  background-color: silver;
+  width: 180px;
+  color: white;
+  font-size: 1.1em;
+  border: 1px solid silver;
+  border-radius: 7px;
+  height: 50px;
+}
+
+.btnForm {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.information {
+  text-align: center;
+  color: rgb(53, 53, 53);
+  font-size: 0.8em;
+  margin-top: 2px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.sectionForm {
+  padding: 1%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.btn:hover {
+  background-color: rgb(165, 164, 164);
+  cursor: pointer;
+}
+
+.btn:first-child {
+  background-color: rgb(177, 57, 36);
+}
+
+.btn:last-child {
+  background-color: #007bff;
+  border: 1px solid silver;
+}
+
+.btn:first-child:hover {
+  background-color: rgb(155, 50, 32);
+  border: 1px solid silver;
+}
+
+.btn:last-child:hover {
+  background-color: #0056b3;
+}
+
+/*barre de couleur pour le mot de passe*/
+meter[id="passwordIndicator"] {
+  --meter-bar-color: rgb(146, 146, 146);
+  --weak: red;
+  --poor: orange;
+  --strong: rgb(0, 189, 0);
+
+  width: 100%;
+  height: 0.8rem;
+  margin: 2px auto 2px 0;
+
+  background: none;
+  background-color: var(--meter-bar-color);
+}
+
+meter[id="passwordIndicator"]::-webkit-meter-bar {
+  background: none;
+  background-color: var(--meter-bar-color);
+}
+
+meter[id="passwordIndicator"][value="1"]::-moz-meter-bar {
+  background: var(--weak);
+}
+meter[id="passwordIndicator"][value="1"]::-webkit-meter-optimum-value {
+  background: var(--weak);
+}
+
+meter[id="passwordIndicator"][value="2"]::-moz-meter-bar {
+  background: var(--poor);
+}
+meter[id="passwordIndicator"][value="2"]::-webkit-meter-optimum-value {
+  background: var(--poor);
+}
+
+meter[id="passwordIndicator"][value="3"]::-moz-meter-bar {
+  background: var(--strong);
+}
+meter[id="passwordIndicator"][value="3"]::-webkit-meter-optimum-value {
+  background: var(--strong);
+}

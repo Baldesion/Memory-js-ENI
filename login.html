@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="css/login.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+    />
+    <script src="js/login.js" defer></script>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="accueil.html" target="_self">Accueil</a></li>
+        <!-- Lien vers l'accueil -->
+        <li><a href="game.html" target="_self">Jouer</a></li>
+        <!-- Lien vers le jeu -->
+        <li><a href="profile.html" target="_self">Profil</a></li>
+        <!-- Lien vers le profil -->
+        <li><a href="signup.html" target="_self">S'inscrire</a></li>
+        <!-- Lien vers la page d'inscription-->
+        <li><a href="login.html" target="_self">Se connecter</a></li>
+        <!-- Lien vers la page de connection-->
+      </ul>
+    </nav>
+    <main>
+      <section class="sectionForm">
+        <fieldset>
+          <form id="loginForm" action="" method="POST">
+            <div>
+              <!--saisie d'utilisateur -->
+              <label for="login">Nom d'utilisateur : </label><br />
+              <input
+                type="text"
+                name="login"
+                id="login"
+                placeholder="Mon nom utilisateur"
+                required
+                title="Renseignez votre login"
+              />
+            </div>
+            <div>
+              <!--saisie de mot de passe avec indicateur de force-->
+              <label for="mdp">Mot de passe : </label><br />
+              <input
+                type="password"
+                name="mdp"
+                id="mdp"
+                placeholder="Mon mot de passe"
+                required
+                title="Renseignez votre mot de passe"
+              />
+            </div>
+            <div class="btnForm">
+              <input type="reset" value="Reset" class="btn" />
+              <input type="submit" value="Connection" class="btn" />
+            </div>
+          </form>
+        </fieldset>
+      </section>
+    </main>
+  </body>
+</html>

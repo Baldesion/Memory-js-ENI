@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="css/game.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+    />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="accueil.html" target="_self">Accueil</a></li>
+        <!-- Lien vers l'accueil -->
+        <li><a href="game.html" target="_self">Jouer</a></li>
+        <!-- Lien vers le jeu -->
+        <li><a href="profile.html" target="_self">Profil</a></li>
+        <!-- Lien vers le profil -->
+        <li><a href="signup.html" target="_self">S'inscrire</a></li>
+        <!-- Lien vers la page d'inscription-->
+        <li><a href="login.html" target="_self">Se connecter</a></li>
+        <!-- Lien vers la page de connection-->
+      </ul>
+    </nav>
+
+    <h1>Memory Cards</h1>
+    <div class="grid-container"></div>
+    <p>Nombre de coups : <span class="score"></span></p>
+    <div class="actions">
+      <button onclick="restart()">Recommencer</button>
+    </div>
+  </body>
+</html>

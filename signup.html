@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="css/signup.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+    />
+    <script src="js/signup.js" defer></script>
+  </head>
+
+  <body>
+    <nav>
+      <ul>
+        <li><a href="accueil.html" target="_self">Accueil</a></li>
+        <!-- Lien vers l'accueil -->
+        <li><a href="game.html" target="_self">Jouer</a></li>
+        <!-- Lien vers le jeu -->
+        <li><a href="profile.html" target="_self">Profil</a></li>
+        <!-- Lien vers le profil -->
+        <li><a href="signup.html" target="_self">S'inscrire</a></li>
+        <!-- Lien vers la page d'inscription-->
+        <li><a href="login.html" target="_self">Se connecter</a></li>
+        <!-- Lien vers la page de connection-->
+      </ul>
+    </nav>
+    <main>
+      <section class="sectionForm">
+        <fieldset>
+          <form id="signupForm" action="" method="POST">
+            <div>
+              <!--saisie d'utilisateur -->
+              <label for="login">Nom d'utilisateur : </label><br />
+              <input
+                type="text"
+                name="login"
+                id="login"
+                placeholder="3 caractères minimum"
+                required
+                title="Renseignez un login de minimum 3 caractères"
+                pattern="[a-zA-Z0-9]{3,}"
+              />
+            </div>
+            <div>
+              <!--saisie d'email-->
+              <label for="email">Entrez votre email : </label><br />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="votre email"
+                required
+                title="Renseignez votre email"
+                autocomplete="username"
+                pattern="^[a-zA-z0-9._-]{3,}[@][a-zA-z0-9]{4,}[.][a-zA-z]{2,}$"
+              />
+            </div>
+            <div>
+              <!--saisie de mot de passe avec indicateur de force-->
+              <label for="mdp">Mot de passe : </label><br />
+              <input
+                type="password"
+                name="mdp"
+                id="mdp"
+                placeholder="Votre mot de passe"
+                required
+                title="Renseignez un mot de passe (min. 6 caractères dont au moins 1 minuscule, 1 majuscule, 1 chiffre et 1 symbole)"
+                autocomplete="new-password"
+                pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{6,}$"
+              />
+              <div class="information">
+                Au moins un symbole, un chiffre, ainsi que 6 caractères
+              </div>
+              <meter id="passwordIndicator" min="0" max="3" value="0"></meter>
+            </div>
+            <div>
+              <!--saisie de mot de passe de vérification-->
+              <label for="mdpVerif">Confirmer le mot de passe : </label><br />
+              <input
+                type="password"
+                name="mdpVerif"
+                id="mdpVerif"
+                placeholder="Votre mot de passe"
+                required
+                title="Renseignez un mot de passe (min. 6 caractères dont au moins 1 minuscule, 1 majuscule, 1 chiffre et 1 symbole)"
+                autocomplete="new-password"
+                pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{6,}$"
+              />
+            </div>
+            <div class="btnForm">
+              <input type="reset" value="Annuler" class="btn" />
+              <input type="submit" value="Confirmer" class="btn" />
+            </div>
+          </form>
+        </fieldset>
+      </section>
+    </main>
+  </body>
+</html>

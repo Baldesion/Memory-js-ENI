@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profil</title>
+    <link rel="stylesheet" href="./css/profile.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+    />
+    <script src="./profile.js" defer></script>
+  </head>
+  <body>
+    <!-- Barre de navigation -->
+    <nav>
+      <ul>
+        <li><a href="accueil.html" target="_self">Accueil</a></li>
+        <!-- Lien vers l'accueil -->
+        <li><a href="game.html" target="_self">Jouer</a></li>
+        <!-- Lien vers le jeu -->
+        <li><a href="profile.html" target="_self">Profil</a></li>
+        <!-- Lien vers le profil -->
+        <li><a href="signup.html" target="_self">S'inscrire</a></li>
+        <!-- Lien vers la page d'inscription-->
+        <li><a href="login.html" target="_self">Se connecter</a></li>
+        <!-- Lien vers la page de connection-->
+      </ul>
+    </nav>
+    <div class="profile-container">
+      <h1>Mon Profil</h1>
+      <!-- Titre profil -->
+      <div class="profile-info">
+        <!-- Section des infos profil -->
+        <div class="profile-image-container">
+          <img
+            id="preview-image"
+            src="/assets/images/defaultprofil.jpg"
+            alt="Profile Img"
+          />
+        </div>
+        <!-- Conteneur détails profil -->
+        <section class="profile-details">
+          <!--affichage du nom utilisateur entré sur la page de connexion-->
+          <div id="login-info"></div>
+        </section>
+      </div>
+      <!-- Bouton de save infos profil -->
+      <button id="save-btn">Enregistrer</button>
+    </div>
+  </body>
+</html>

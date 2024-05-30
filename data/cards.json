@@ -1,0 +1,38 @@
+[
+  {
+    "image": "../assets/images/police.png",
+    "name": "aerith"
+  },
+  {
+    "image": "../assets/images/boss.png",
+    "name": "cloud"
+  },
+  {
+    "image": "../assets/images/doc.png",
+    "name": "tifa"
+  },
+  {
+    "image": "../assets/images/thief.png",
+    "name": "vincent"
+  },
+  {
+    "image": "../assets/images/mario.png",
+    "name": "yuffie"
+  },
+  {
+    "image": "../assets/images/devil.png",
+    "name": "redxiii"
+  },
+  {
+    "image": "../assets/images/steve.png",
+    "name": "barret"
+  },
+  {
+    "image": "../assets/images/justin.png",
+    "name": "zackfair"
+  },
+  {
+    "image": "../assets/images/death.png",
+    "name": "caitsith"
+  }
+]
